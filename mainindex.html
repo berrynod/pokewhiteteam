@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mainstyle.css">
+</head>
+<body>
+    <div id="pagetop">
+        <div id="HEADBlack" class="tabcontent">
+            <img id="iconIMG" src="https://archives.bulbagarden.net/media/upload/a/a0/BT643.png">
+            <h1>Team for beating Pokemon Black ...w/Snivy!</h1>
+        </div>
+        <div id="HEADWhite" class="tabcontent">
+            <img id="iconIMG" src="https://archives.bulbagarden.net/media/upload/7/7b/BT644.png">
+            <h1>Team for beating Pokemon White ...w/Snivy!</h1>
+        </div>
+    </div>
+    <button class="tablink" onclick="openPage('HEADBlack', this, 'black', 'white')">Black</button>
+    <button class="tablink" onclick="openPage('HEADWhite', this, 'white', 'black')" id="defaultOpen">White</button>
+
+    <!-- <button class="starterButton">snivy</button>
+    <button class="starterButton">tepig</button>
+    <button class="starterButton">oshawott</button> -->
+
+    <div class="PKMNtable">
+        <div class="starter">
+            <div class="startercontainer">
+                <img id="imgSTARTER" src="https://archives.bulbagarden.net/media/upload/6/6a/Spr_5b_495.png">
+            </div>
+            <div class="startertype">
+                <p>Snivy</p>
+                <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/2/23/GrassIC_BW.png">
+            </div>
+            <p>It is very intelligent and calm. Being exposed to lots of sunlight makes its movements swifter.</p>
+        </div>
+
+        <div class="tableteam">
+            <table class="poketeam">
+                <tr>
+                    <td>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/2/23/GrassIC_BW.png">
+                        <img id="pkmtype" src="">
+                        <p>Serperior</p>
+                        <img id="pk1" class="POKEimage" src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png">
+                    </td>
+                    <td>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/2/2b/WaterIC_BW.png">
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/f/f4/GroundIC_BW.png">
+                        <p>Seismitoad</p>
+                        <img id="pk2" class="POKEimage" src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png">
+                    </td>
+                    <td>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/6/67/ElectricIC_BW.png">
+                        <img id="pkmtype" src="">
+                        <p>Eelektross</p>
+                        <img id="pk3" class="POKEimage" src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id="pk4" class="POKEimage" src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png">
+                        <p>Chandelure</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/9/99/GhostIC_BW.png">
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/1/15/FireIC_BW.png">
+                    </td>
+                    <td>
+                        <img id="pk5" class="POKEimage" src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png">
+                        <p>Archeops</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/8/85/RockIC_BW.png">
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/8/8e/FlyingIC_BW.png">
+                    </td>
+                    <td>
+                        <img id="pk6" class="POKEimage" src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png">
+                        <p>Haxorus</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/a/ad/DragonIC_BW.png">
+                        <img id="pkmtype" src="">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+
+    <div class="toggle-element" id="Serperior">
+        <div class="STATStable">
+            <div>
+                <table class="pokestat">
+                    <tr>
+                        <td>HP</td>
+                        <td>75</td>
+                        <td><div class="progress-container"><div class="progress hpSerp"></div></div></td>
+                        <td>260</td>
+                        <td>354</td>
+                    </tr>
+                    <tr>
+                        <td>Attack</td>
+                        <td>75</td>
+                        <td><div class="progress-container"><div class="progress attackSerp"></div></div></td>
+                        <td>139</td>
+                        <td>273</td>
+                    </tr>
+                    <tr>
+                        <td>Defense</td>
+                        <td>95</td>
+                        <td><div class="progress-container"><div class="progress defenseSerp"></div></div></td>
+                        <td>175</td>
+                        <td>317</td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Atk</td>
+                        <td>75</td>
+                        <td><div class="progress-container"><div class="progress sp-atkSerp"></div></div></td>
+                        <td>139</td>
+                        <td>273</td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Def</td>
+                        <td>95</td>
+                        <td><div class="progress-container"><div class="progress sp-defSerp"></div></div></td>
+                        <td>175</td>
+                        <td>317</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>113</td>
+                        <td><div class="progress-container"><div class="progress speedSerp"></div></div></td>
+                        <td>207</td>
+                        <td>357</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th>528</th>
+                        <td></td>
+                        <th>Min</th>
+                        <th>Max</th>
+                    </tr>
+                </table>
+                <div class="weaknesses">
+                    <div class="row">
+                        <h3>Weak to:</h3>
+                        <div class="types">
+                            <img id="Normal" src="">
+                            <img id="Fighting" src="">
+                            <img id="Flying" src="https://archives.bulbagarden.net/media/upload/8/8e/FlyingIC_BW.png">
+                            <img id="Poison" src="https://archives.bulbagarden.net/media/upload/b/ba/PoisonIC_BW.png">
+                            <img id="Ground" src="">
+                            <img id="Rock" src="">
+                            <img id="Bug" src="https://archives.bulbagarden.net/media/upload/2/2e/BugIC_BW.png">
+                            <img id="Ghost" src="">
+                            <img id="Steel" src="">
+                            <img id="Fire" src="https://archives.bulbagarden.net/media/upload/1/15/FireIC_BW.png">
+                            <img id="Water" src="">
+                            <img id="Grass" src="">
+                            <img id="Electric" src="">
+                            <img id="Psychic" src="">
+                            <img id="Ice" src="https://archives.bulbagarden.net/media/upload/a/ad/IceIC_BW.png">
+                            <img id="Dragon" src="">
+                            <img id="Dark" src="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>Resistant to:</h3>
+                        <div class="types">
+                            <img id="Normal" src="">
+                            <img id="Fighting" src="">
+                            <img id="Flying" src="">
+                            <img id="Poison" src="">
+                            <img id="Ground" src="https://archives.bulbagarden.net/media/upload/f/f4/GroundIC_BW.png">
+                            <img id="Rock" src="">
+                            <img id="Bug" src="">
+                            <img id="Ghost" src="">
+                            <img id="Steel" src="">
+                            <img id="Fire" src="">
+                            <img id="Water" src="https://archives.bulbagarden.net/media/upload/2/2b/WaterIC_BW.png">
+                            <img id="Grass" src="https://archives.bulbagarden.net/media/upload/2/23/GrassIC_BW.png">
+                            <img id="Electric" src="https://archives.bulbagarden.net/media/upload/6/67/ElectricIC_BW.png">
+                            <img id="Psychic" src="">
+                            <img id="Ice" src="">
+                            <img id="Dragon" src="">
+                            <img id="Dark" src="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="currentpok">
+                <div class="slider-container">
+                    <div class="slider" id="slider1">
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                    </div>
+                    <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                    <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+                </div>
+    
+                <div class="threestage">
+                    <div id="one" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/f/fc/Spr_5b2_495.png">
+                        <p>Snivy</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/2/23/GrassIC_BW.png">
+                        <img id="pkmtype" src="">
+                    </div>
+                    <div class="arrowevo">
+                        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                        <p>17 lvl</p>
+                    </div>
+                    <div id="two" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/f/fe/Spr_5b_496.png">
+                        <p>Servine</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/2/23/GrassIC_BW.png">
+                        <img id="pkmtype" src="">
+                    </div>
+                    <div class="arrowevo">
+                        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                        <p>36 lvl</p>
+                    </div>
+                    <div id="three" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png">
+                        <p>Serperior</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/2/23/GrassIC_BW.png">
+                        <img id="pkmtype" src="">
+                    </div>
+        
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="LASTinfo">
+            <div class="desription">
+                <h3>Usage</h3>
+                <p>Easily the coolest looking of the 3 Unova starters. Serperior may have a shallow movepool, but that doesn't really matter since its stat distribution is unique enough to make this set work. Leaf Blade is STAB and the primary attacking move. Giga Drain is also STAB but is mainly for recovery. Leech Seed is a must have for this stall set, as is Toxic, which in tandem will quickly wear down the enemy. Big Root is a great item for this set.</p>
+            </div>
+            <div class="high">
+                <div class="wheretofind">
+                    <h3>Where to find</h3>
+                    <img src="https://www.serebii.net/pokearth/maps/unova/19.png">
+                    <p id="location">Nuvema Town</p>
+                </div>
+                <div class="moves">
+                    <h3>Moveset</h3>
+                    <div id="one">
+                        <p>Leaf Blade</p>
+                    </div>
+                    <div id="two">
+                        <p>Giga Drain</p>
+                    </div>
+                    <div id="three">
+                        <p>Leech Seed</p>
+                    </div>
+                    <div id="four">
+                        <p>Toxic</p>
+                    </div>
+                </div>
+                <div class="extra">
+                    <div class="itemslider">
+                        <div class="item">
+                            <h3>Item</h3>
+                            <img src="https://archives.bulbagarden.net/media/upload/2/2d/Dream_Big_Root_Sprite.png">
+                            <p>Big Root</p>
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider" id="slider2">
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                            </div>
+                            <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                            <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3>Abillity</h3>
+                        <p>Powers up Grass-type moves in a pinch.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div class="toggle-element" id="Seismitoad">
+        <div class="STATStable">
+            <div>
+                <table class="pokestat">
+                    <tr>
+                        <td>HP</td>
+                        <td>105</td>
+                        <td><div class="progress-container"><div class="progress hpSeis"></div></div></td>
+                        <td>320</td>
+                        <td>414</td>
+                    </tr>
+                    <tr>
+                        <td>Attack</td>
+                        <td>95</td>
+                        <td><div class="progress-container"><div class="progress attackSeis"></div></div></td>
+                        <td>175</td>
+                        <td>317</td>
+                    </tr>
+                    <tr>
+                        <td>Defense</td>
+                        <td>75</td>
+                        <td><div class="progress-container"><div class="progress defenseSeis"></div></div></td>
+                        <td>139</td>
+                        <td>273</td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Atk</td>
+                        <td>85</td>
+                        <td><div class="progress-container"><div class="progress sp-atkSeis"></div></div></td>
+                        <td>157</td>
+                        <td>295</td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Def</td>
+                        <td>75</td>
+                        <td><div class="progress-container"><div class="progress sp-defSeis"></div></div></td>
+                        <td>139</td>
+                        <td>273</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>74</td>
+                        <td><div class="progress-container"><div class="progress speedSeis"></div></div></td>
+                        <td>137</td>
+                        <td>271</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th>509</th>
+                        <td></td>
+                        <th>Min</th>
+                        <th>Max</th>
+                    </tr>
+                </table>
+                <div class="weaknesses">
+                    <div class="row">
+                        <h3>Weak to:</h3>
+                        <div class="types">
+                            <img id="Grass" src="https://archives.bulbagarden.net/media/upload/2/23/GrassIC_BW.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>Resistant to:</h3>
+                        <div class="types">
+                            <img id="Poison" src="https://archives.bulbagarden.net/media/upload/b/ba/PoisonIC_BW.png">
+                            <img id="Rock" src="https://archives.bulbagarden.net/media/upload/8/85/RockIC_BW.png">
+                            <img id="Steel" src="https://archives.bulbagarden.net/media/upload/0/04/SteelIC_BW.png">
+                            <img id="Fire" src="https://archives.bulbagarden.net/media/upload/1/15/FireIC_BW.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="currentpok">
+                <div class="slider-container">
+                    <div class="slider" id="slider3">
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                    </div>
+                    <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                    <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+                </div>
+    
+                <div class="threestage">
+                    <div id="one" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/d/da/Spr_5b_535.png">
+                        <p>Tympole</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/2/2b/WaterIC_BW.png">
+                    </div>
+                    <div class="arrowevo">
+                        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                        <p>25 lvl</p>
+                    </div>
+                    <div id="two" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/a/a8/Spr_5b_536.png">
+                        <p>Palpitoad</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/2/2b/WaterIC_BW.png">
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/f/f4/GroundIC_BW.png">
+                    </div>
+                    <div class="arrowevo">
+                        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                        <p>36 lvl</p>
+                    </div>
+                    <div id="three" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png">
+                        <p>Seismitoad</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/2/2b/WaterIC_BW.png">
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/f/f4/GroundIC_BW.png">
+                    </div>
+        
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="LASTinfo">
+            <div class="desription">
+                <h3>Usage</h3>
+                <p>Seismitoad makes the cut, and especially since it's one of the best types in the game, Water/Ground. Surf and Earthquake are STAB, Drain Punch is coverage, and Sludge Bomb/Poison Jab is there since it can't learn Ice Beam for whatever reason.</p>
+            </div>
+            <div class="high">
+                <div class="wheretofind">
+                    <h3>Where to find</h3>
+                    <img src="https://www.serebii.net/pokearth/maps/unova/26-outside.png">
+                    <p id="location">Pinwheel Forest</p>
+                </div>
+                <div class="moves Seis">
+                    <h3>Moveset</h3>
+                    <div id="one">
+                        <p>Surf</p>
+                    </div>
+                    <div id="two">
+                        <p>Earthquake</p>
+                    </div>
+                    <div id="three">
+                        <p>Drain Punch</p>
+                    </div>
+                    <div id="four">
+                        <p>Sludge Bomb</p>
+                    </div>
+                </div>
+                <div class="extra">
+                    <div class="itemslider">
+                        <div class="item">
+                            <h3>Item</h3>
+                            <img src="https://archives.bulbagarden.net/media/upload/1/18/Dream_Mystic_Water_Sprite.png">
+                            <p>Mystic Water</p>
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider" id="slider4">
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                            </div>
+                            <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                            <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3>Abillity</h3>
+                        <p>Poison Touch - May poison targets when a Pokémon makes contact.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div class="toggle-element" id="Eelectross">
+        <div class="STATStable">
+            <div>
+                <table class="pokestat">
+                    <tr>
+                        <td>HP</td>
+                        <td>85</td>
+                        <td><div class="progress-container"><div class="progress hpEel"></div></div></td>
+                        <td>280</td>
+                        <td>374</td>
+                    </tr>
+                    <tr>
+                        <td>Attack</td>
+                        <td>115</td>
+                        <td><div class="progress-container"><div class="progress attackEel"></div></div></td>
+                        <td>211</td>
+                        <td>361</td>
+                    </tr>
+                    <tr>
+                        <td>Defense</td>
+                        <td>80</td>
+                        <td><div class="progress-container"><div class="progress defenseEel"></div></div></td>
+                        <td>148</td>
+                        <td>284</td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Atk</td>
+                        <td>105</td>
+                        <td><div class="progress-container"><div class="progress sp-atkEel"></div></div></td>
+                        <td>193</td>
+                        <td>339</td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Def</td>
+                        <td>80</td>
+                        <td><div class="progress-container"><div class="progress sp-defEel"></div></div></td>
+                        <td>148</td>
+                        <td>284</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>50</td>
+                        <td><div class="progress-container"><div class="progress speedEel"></div></div></td>
+                        <td>94</td>
+                        <td>218</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th>515</th>
+                        <td></td>
+                        <th>Min</th>
+                        <th>Max</th>
+                    </tr>
+                </table>
+                <div class="weaknesses">
+                    <div class="row">
+                        <h3>Weak to:</h3>
+                        <div class="types">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>Resistant to:</h3>
+                        <div class="types">
+                            <img id="Flying" src="https://archives.bulbagarden.net/media/upload/8/8e/FlyingIC_BW.png">
+                            <img id="Steel" src="https://archives.bulbagarden.net/media/upload/0/04/SteelIC_BW.png">
+                            <img id="Electric" src="https://archives.bulbagarden.net/media/upload/6/67/ElectricIC_BW.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="currentpok">
+                <div class="slider-container">
+                    <div class="slider" id="slider5">
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                    </div>
+                    <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                    <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+                </div>
+    
+                <div class="threestage">
+                    <div id="one" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/2/28/Spr_5b_602.png">
+                        <p>Tynamo</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/6/67/ElectricIC_BW.png">
+                    </div>
+                    <div class="arrowevo">
+                        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                        <p>39 lvl</p>
+                    </div>
+                    <div id="two" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/5/54/Spr_5b_603.png">
+                        <p>Eelektrik</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/6/67/ElectricIC_BW.png">
+                    </div>
+                    <div class="arrowevo">
+                        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                        <p>Thunder Stone</p>
+                    </div>
+                    <div id="three" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png">
+                        <p>Eelektross</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/6/67/ElectricIC_BW.png">
+                    </div>
+        
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="LASTinfo">
+            <div class="desription">
+                <h3>Usage</h3>
+                <p>Eelektross has one of the best types in the game (Electric), and every Pokemon team needs a good Electric type. That's what Eelektross is, especially thanks to Levitate, which means it has no weaknesses! Thunderbolt is STAB, Brick Break and Crunch are nice coverage moves that hit the E4 hard, and Thunder Wave is one of the best status moves to ever exist.</p>
+            </div>
+            <div class="high">
+                <div class="wheretofind">
+                    <h3>Where to find</h3>
+                    <img src="https://www.serebii.net/pokearth/maps/unova/36-b1f.png">
+                    <p id="location">Chargestone Cave</p>
+                </div>
+                <div class="moves Eel">
+                    <h3>Moveset</h3>
+                    <div id="one">
+                        <p>Thunderbolt</p>
+                    </div>
+                    <div id="two">
+                        <p>Brick Break</p>
+                    </div>
+                    <div id="three">
+                        <p>Crunch</p>
+                    </div>
+                    <div id="four">
+                        <p>Thunder Wave</p>
+                    </div>
+                </div>
+                <div class="extra">
+                    <div class="itemslider">
+                        <div class="item">
+                            <h3>Item</h3>
+                            <img src="https://archives.bulbagarden.net/media/upload/a/a8/Dream_Magnet_Sprite.png">
+                            <p>Magnet</p>
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider" id="slider6">
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                            </div>
+                            <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                            <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3>Abillity</h3>
+                        <p>Levitate - Gives full immunity to all Ground-type moves.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div class="toggle-element" id="Chandelure">
+        <div class="STATStable">
+            <div>
+                <table class="pokestat">
+                    <tr>
+                        <td>HP</td>
+                        <td>60</td>
+                        <td><div class="progress-container"><div class="progress hpCha"></div></div></td>
+                        <td>230</td>
+                        <td>324</td>
+                    </tr>
+                    <tr>
+                        <td>Attack</td>
+                        <td>55</td>
+                        <td><div class="progress-container"><div class="progress attackCha"></div></div></td>
+                        <td>103</td>
+                        <td>229</td>
+                    </tr>
+                    <tr>
+                        <td>Defense</td>
+                        <td>90</td>
+                        <td><div class="progress-container"><div class="progress defenseCha"></div></div></td>
+                        <td>166</td>
+                        <td>306</td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Atk</td>
+                        <td>145</td>
+                        <td><div class="progress-container"><div class="progress sp-atkCha"></div></div></td>
+                        <td>265</td>
+                        <td>427</td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Def</td>
+                        <td>90</td>
+                        <td><div class="progress-container"><div class="progress sp-defCha"></div></div></td>
+                        <td>166</td>
+                        <td>306</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>80</td>
+                        <td><div class="progress-container"><div class="progress speedCha"></div></div></td>
+                        <td>148</td>
+                        <td>284</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th>520</th>
+                        <td></td>
+                        <th>Min</th>
+                        <th>Max</th>
+                    </tr>
+                </table>
+                <div class="weaknesses">
+                    <div class="row">
+                        <h3>Weak to:</h3>
+                        <div class="types">
+                            <img id="Ground" src="https://archives.bulbagarden.net/media/upload/f/f4/GroundIC_BW.png">
+                            <img id="Rock" src="https://archives.bulbagarden.net/media/upload/8/85/RockIC_BW.png">
+                            <img id="Ghost" src="https://archives.bulbagarden.net/media/upload/9/99/GhostIC_BW.png">
+                            <img id="Water" src="https://archives.bulbagarden.net/media/upload/2/2b/WaterIC_BW.png">
+                            <img id="Dark" src="https://archives.bulbagarden.net/media/upload/3/35/DarkIC_BW.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>Resistant to:</h3>
+                        <div class="types">
+                            <img id="Poison" src="https://archives.bulbagarden.net/media/upload/b/ba/PoisonIC_BW.png">
+                            <img id="Bug" src="https://archives.bulbagarden.net/media/upload/2/2e/BugIC_BW.png  ">
+                            <img id="Steel" src="https://archives.bulbagarden.net/media/upload/0/04/SteelIC_BW.png">
+                            <img id="Fire" src="https://archives.bulbagarden.net/media/upload/1/15/FireIC_BW.png">
+                            <img id="Grass" src="https://archives.bulbagarden.net/media/upload/2/23/GrassIC_BW.png">
+                            <img id="Ice" src="https://archives.bulbagarden.net/media/upload/a/ad/IceIC_BW.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="currentpok">
+                <div class="slider-container">
+                    <div class="slider" id="slider7">
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                    </div>
+                    <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                    <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+                </div>
+    
+                <div class="threestage">
+                    <div id="one" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/5/50/Spr_5b_607.png">
+                        <p>Litwick</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/9/99/GhostIC_BW.png">
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/1/15/FireIC_BW.png">
+                    </div>
+                    <div class="arrowevo">
+                        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                        <p>41 lvl</p>
+                    </div>
+                    <div id="two" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/e/e6/Spr_5b_608.png">
+                        <p>Lampent</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/9/99/GhostIC_BW.png">
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/1/15/FireIC_BW.png">
+                    </div>
+                    <div class="arrowevo">
+                        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                        <p>	Dusk Stone</p>
+                    </div>
+                    <div id="three" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png">
+                        <p>Chandelure</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/9/99/GhostIC_BW.png">
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/1/15/FireIC_BW.png">
+                    </div>
+        
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="LASTinfo">
+            <div class="desription">
+                <h3>Usage</h3>
+                <p>Chandelure is one of the coolest looking Pokemon out there, and has a wicked Special Attack stat. Flamethrower and Shadow Ball are STAB, with Energy Ball and Psychic as coverage.</p>
+            </div>
+            <div class="high">
+                <div class="wheretofind">
+                    <h3>Where to find</h3>
+                    <img src="https://www.serebii.net/pokearth/maps/unova/38-1f.png">
+                    <p id="location">Celestial Tower</p>
+                </div>
+                <div class="moves Cha">
+                    <h3>Moveset</h3>
+                    <div id="one">
+                        <p>Flamethrower</p>
+                    </div>
+                    <div id="two">
+                        <p>Shadow Ball</p>
+                    </div>
+                    <div id="three">
+                        <p>Energy Ball</p>
+                    </div>
+                    <div id="four">
+                        <p>Psychic</p>
+                    </div>
+                </div>
+                <div class="extra">
+                    <div class="itemslider">
+                        <div class="item">
+                            <h3>Item</h3>
+                            <img src="https://archives.bulbagarden.net/media/upload/0/08/Dream_Charcoal_Sprite.png">
+                            <p>Charcoal</p>
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider" id="slider8">
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                            </div>
+                            <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                            <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3>Abillity</h3>
+                        <p>Flame Body - Contact with the Pokémon may burn the attacker.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div class="toggle-element" id="Archeops">
+        <div class="STATStable">
+            <div>
+                <table class="pokestat">
+                    <tr>
+                        <td>HP</td>
+                        <td>75</td>
+                        <td><div class="progress-container"><div class="progress hpArch"></div></div></td>
+                        <td>260</td>
+                        <td>354</td>
+                    </tr>
+                    <tr>
+                        <td>Attack</td>
+                        <td>140</td>
+                        <td><div class="progress-container"><div class="progress attackArch"></div></div></td>
+                        <td>256</td>
+                        <td>416</td>
+                    </tr>
+                    <tr>
+                        <td>Defense</td>
+                        <td>65</td>
+                        <td><div class="progress-container"><div class="progress defenseArch"></div></div></td>
+                        <td>121</td>
+                        <td>251</td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Atk</td>
+                        <td>112</td>
+                        <td><div class="progress-container"><div class="progress sp-atkArch"></div></div></td>
+                        <td>206</td>
+                        <td>355</td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Def</td>
+                        <td>65</td>
+                        <td><div class="progress-container"><div class="progress sp-defArch"></div></div></td>
+                        <td>121</td>
+                        <td>251</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>110</td>
+                        <td><div class="progress-container"><div class="progress speedArch"></div></div></td>
+                        <td>202</td>
+                        <td>350</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th>567</th>
+                        <td></td>
+                        <th>Min</th>
+                        <th>Max</th>
+                    </tr>
+                </table>
+                <div class="weaknesses">
+                    <div class="row">
+                        <h3>Weak to:</h3>
+                        <div class="types">
+                            <img id="Rock" src="https://archives.bulbagarden.net/media/upload/8/85/RockIC_BW.png">
+                            <img id="Steel" src="https://archives.bulbagarden.net/media/upload/0/04/SteelIC_BW.png">
+                            <img id="Water" src="https://archives.bulbagarden.net/media/upload/2/2b/WaterIC_BW.png">
+                            <img id="Electric" src="https://archives.bulbagarden.net/media/upload/6/67/ElectricIC_BW.png">
+                            <img id="Ice" src="https://archives.bulbagarden.net/media/upload/a/ad/IceIC_BW.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>Resistant to:</h3>
+                        <div class="types">
+                            <img id="Normal" src="https://archives.bulbagarden.net/media/upload/2/28/NormalIC_BW.png">
+                            <img id="Flying" src="https://archives.bulbagarden.net/media/upload/8/8e/FlyingIC_BW.png">
+                            <img id="Poison" src="https://archives.bulbagarden.net/media/upload/b/ba/PoisonIC_BW.png">
+                            <img id="Bug" src="https://archives.bulbagarden.net/media/upload/2/2e/BugIC_BW.png">
+                            <img id="Fire" src="https://archives.bulbagarden.net/media/upload/1/15/FireIC_BW.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="currentpok">
+                <div class="slider-container">
+                    <div class="slider" id="slider9">
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                    </div>
+                    <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                    <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+                </div>
+    
+                <div class="threestage">
+                    <div id="one" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/d/dd/Spr_5b_566.png">
+                        <p>Archen</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/8/85/RockIC_BW.png">
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/8/8e/FlyingIC_BW.png">
+                    </div>
+                    <div class="arrowevo">
+                        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                        <p>37 lvl</p>
+                    </div>
+                    <div id="two" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png">
+                        <p>Archeops</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/8/85/RockIC_BW.png">
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/8/8e/FlyingIC_BW.png">
+                    </div>
+        
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="LASTinfo">
+            <div class="desription">
+                <h3>Usage</h3>
+                <p>Despite its Ability, if you use Archeops right, it is a force to be reckoned with. Fly is STAB and useful for getting places, Stone Edge is also STAB, Earthquake is coverage, and U-turn was pretty much made with Archeops in mind.</p>
+            </div>
+            <div class="high">
+                <div class="wheretofind">
+                    <h3>Where to find</h3>
+                    <img src="https://www.serebii.net/pokearth/maps/unova/25.png">
+                    <p id="location">Nacrene City</p>
+                </div>
+                <div class="moves Arch">
+                    <h3>Moveset</h3>
+                    <div id="one">
+                        <p>Fly</p>
+                    </div>
+                    <div id="two">
+                        <p>Stone Edge</p>
+                    </div>
+                    <div id="three">
+                        <p>Earthquake</p>
+                    </div>
+                    <div id="four">
+                        <p>U-turn</p>
+                    </div>
+                </div>
+                <div class="extra">
+                    <div class="itemslider">
+                        <div class="item">
+                            <h3>Item</h3>
+                            <img src="https://archives.bulbagarden.net/media/upload/b/b5/Dream_Sharp_Beak_Sprite.png">
+                            <p>Sharp Beak</p>
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider" id="slider10">
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                            </div>
+                            <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                            <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3>Abillity</h3>
+                        <p>Defeatist - Lowers stats when HP becomes half or less.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div class="toggle-element" id="Haxorus">
+        <div class="STATStable">
+            <div>
+                <table class="pokestat">
+                    <tr>
+                        <td>HP</td>
+                        <td>76</td>
+                        <td><div class="progress-container"><div class="progress hp"></div></div></td>
+                        <td>262</td>
+                        <td>356</td>
+                    </tr>
+                    <tr>
+                        <td>Attack</td>
+                        <td>147</td>
+                        <td><div class="progress-container"><div class="progress attack"></div></div></td>
+                        <td>269</td>
+                        <td>432</td>
+                    </tr>
+                    <tr>
+                        <td>Defense</td>
+                        <td>90</td>
+                        <td><div class="progress-container"><div class="progress defense"></div></div></td>
+                        <td>166</td>
+                        <td>306</td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Atk</td>
+                        <td>60</td>
+                        <td><div class="progress-container"><div class="progress sp-atk"></div></div></td>
+                        <td>112</td>
+                        <td>240</td>
+                    </tr>
+                    <tr>
+                        <td>Sp. Def</td>
+                        <td>70</td>
+                        <td><div class="progress-container"><div class="progress sp-def"></div></div></td>
+                        <td>130</td>
+                        <td>262</td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td>97</td>
+                        <td><div class="progress-container"><div class="progress speed"></div></div></td>
+                        <td>179</td>
+                        <td>322</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th>540</th>
+                        <td></td>
+                        <th>Min</th>
+                        <th>Max</th>
+                    </tr>
+                </table>
+                <div class="weaknesses">
+                    <div class="row">
+                        <h3>Weak to:</h3>
+                        <div class="types">
+                            <img id="Ice" src="https://archives.bulbagarden.net/media/upload/a/ad/IceIC_BW.png">
+                            <img id="Dragon" src="https://archives.bulbagarden.net/media/upload/a/ad/DragonIC_BW.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h3>Resistant to:</h3>
+                        <div class="types">
+                            <img id="Fire" src="https://archives.bulbagarden.net/media/upload/1/15/FireIC_BW.png">
+                            <img id="Water" src="https://archives.bulbagarden.net/media/upload/2/2b/WaterIC_BW.png">
+                            <img id="Grass" src="https://archives.bulbagarden.net/media/upload/2/23/GrassIC_BW.png">
+                            <img id="Electric" src="https://archives.bulbagarden.net/media/upload/6/67/ElectricIC_BW.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="currentpok">
+                <div class="slider-container">
+                    <div class="slider" id="slider11">
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                        <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                    </div>
+                    <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                    <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+                </div>
+    
+                <div class="threestage">
+                    <div id="one" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/f/f6/Spr_5b_610.png">
+                        <p>Axew</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/a/ad/DragonIC_BW.png">
+                    </div>
+                    <div class="arrowevo">
+                        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                        <p>38 lvl</p>
+                    </div>
+                    <div id="two" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/d/d4/Spr_5b_611.png">
+                        <p>Fraxure</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/a/ad/DragonIC_BW.png">
+                    </div>
+                    <div class="arrowevo">
+                        <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                        <p>48 lvl</p>
+                    </div>
+                    <div id="three" class="stage">
+                        <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png">
+                        <p>Haxorus</p>
+                        <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/a/ad/DragonIC_BW.png">
+                    </div>
+        
+                </div>
+            </div>
+            
+        </div>
+    
+        <div class="LASTinfo">
+            <div class="desription">
+                <h3>Usage</h3>
+                <p>Haxorus is pretty much this generation's substitute for a psuedo legendary, since it at least evolves way earlier than freaking Level 64 and is actually useable in the main story (evolves at Level 48). Dragon Claw/Outrage is STAB, Brick Break and Shadow Claw destroy most of the Elite Four, and Dragon Dance Haxorus destroys EVERYTHING, including Ghetsis's Hydreigon.</p>
+            </div>
+            <div class="high">
+                <div class="wheretofind">
+                    <h3>Where to find</h3>
+                    <img src="https://www.serebii.net/pokearth/maps/unova/37.png">
+                    <p id="location">Mistralton City</p>
+                </div>
+                <div class="moves Hax">
+                    <h3>Moveset</h3>
+                    <div id="one">
+                        <p>Dragon Claw</p>
+                    </div>
+                    <div id="two">
+                        <p>Brick Break</p>
+                    </div>
+                    <div id="three">
+                        <p>Shadow Claw</p>
+                    </div>
+                    <div id="four">
+                        <p>Dragon Dance</p>
+                    </div>
+                </div>
+                <div class="extra">
+                    <div class="itemslider">
+                        <div class="item">
+                            <h3>Item</h3>
+                            <img src="https://archives.bulbagarden.net/media/upload/3/31/Dream_Rocky_Helmet_Sprite.png">
+                            <p>Rocky Helmet</p>
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider" id="slider12">
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                                <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                            </div>
+                            <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                            <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3>Abillity</h3>
+                        <p>Mold Breaker - Moves can be used regardless of Abilities.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <!-- <div class="STATStable">
+        <div>
+            <table class="pokestat">
+                <tr>
+                    <th>Стат</th>
+                    <th>Значення</th>
+                    <th>Прогрес</th>
+                    <th>Мін</th>
+                    <th>Макс</th>
+                </tr>
+                <tr>
+                    <td>HP</td>
+                    <td>45</td>
+                    <td><div class="progress-container"><div class="progress hp"></div></div></td>
+                    <td>200</td>
+                    <td>294</td>
+                </tr>
+                <tr>
+                    <td>Attack</td>
+                    <td>49</td>
+                    <td><div class="progress-container"><div class="progress attack"></div></div></td>
+                    <td>92</td>
+                    <td>216</td>
+                </tr>
+                <tr>
+                    <td>Defense</td>
+                    <td>49</td>
+                    <td><div class="progress-container"><div class="progress defense"></div></div></td>
+                    <td>92</td>
+                    <td>216</td>
+                </tr>
+                <tr>
+                    <td>Sp. Atk</td>
+                    <td>65</td>
+                    <td><div class="progress-container"><div class="progress sp-atk"></div></div></td>
+                    <td>121</td>
+                    <td>251</td>
+                </tr>
+                <tr>
+                    <td>Sp. Def</td>
+                    <td>65</td>
+                    <td><div class="progress-container"><div class="progress sp-def"></div></div></td>
+                    <td>121</td>
+                    <td>251</td>
+                </tr>
+                <tr>
+                    <td>Speed</td>
+                    <td>45</td>
+                    <td><div class="progress-container"><div class="progress speed"></div></div></td>
+                    <td>85</td>
+                    <td>207</td>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <th>318</th>
+                    <td></td>
+                    <th>Min</th>
+                    <th>Max</th>
+                </tr>
+            </table>
+            <div class="weaknesses">
+                <div class="row">
+                    <h3>Weak to:</h3>
+                    <div class="types">
+                        <img id="Normal" src="">
+                        <img id="Fighting" src="">
+                        <img id="Flying" src="https://archives.bulbagarden.net/media/upload/8/8e/FlyingIC_BW.png">
+                        <img id="Poison" src="https://archives.bulbagarden.net/media/upload/b/ba/PoisonIC_BW.png">
+                        <img id="Ground" src="">
+                        <img id="Rock" src="">
+                        <img id="Bug" src="https://archives.bulbagarden.net/media/upload/2/2e/BugIC_BW.png">
+                        <img id="Ghost" src="">
+                        <img id="Steel" src="">
+                        <img id="Fire" src="https://archives.bulbagarden.net/media/upload/1/15/FireIC_BW.png">
+                        <img id="Water" src="">
+                        <img id="Grass" src="">
+                        <img id="Electric" src="">
+                        <img id="Psychic" src="">
+                        <img id="Ice" src="https://archives.bulbagarden.net/media/upload/a/ad/IceIC_BW.png">
+                        <img id="Dragon" src="">
+                        <img id="Dark" src="">
+                    </div>
+                </div>
+                <div class="row">
+                    <h3>Resistant to:</h3>
+                    <div class="types">
+                        <img id="Normal" src="">
+                        <img id="Fighting" src="">
+                        <img id="Flying" src="">
+                        <img id="Poison" src="">
+                        <img id="Ground" src="https://archives.bulbagarden.net/media/upload/f/f4/GroundIC_BW.png">
+                        <img id="Rock" src="">
+                        <img id="Bug" src="">
+                        <img id="Ghost" src="">
+                        <img id="Steel" src="">
+                        <img id="Fire" src="">
+                        <img id="Water" src="https://archives.bulbagarden.net/media/upload/2/2b/WaterIC_BW.png">
+                        <img id="Grass" src="https://archives.bulbagarden.net/media/upload/2/23/GrassIC_BW.png">
+                        <img id="Electric" src="https://archives.bulbagarden.net/media/upload/6/67/ElectricIC_BW.png">
+                        <img id="Psychic" src="">
+                        <img id="Ice" src="">
+                        <img id="Dragon" src="">
+                        <img id="Dark" src="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="currentpok">
+            <div class="slider-container">
+                <div class="slider" id="slider1">
+                    <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                    <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                    <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                    <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                    <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                    <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                </div>
+                <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+            </div>
+
+            <div class="threestage">
+                <div id="one" class="stage">
+                    <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/f/fc/Spr_5b2_495.png">
+                    <p>Snivy</p>
+                    <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/2/23/GrassIC_BW.png">
+                    <img id="pkmtype" src="">
+                </div>
+                <div class="arrowevo">
+                    <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                    <p>17 lvl</p>
+                </div>
+                <div id="two" class="stage">
+                    <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/f/fe/Spr_5b_496.png">
+                    <p>Servine</p>
+                    <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/2/23/GrassIC_BW.png">
+                    <img id="pkmtype" src="">
+                </div>
+                <div class="arrowevo">
+                    <img id="arrow" src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
+                    <p>36 lvl</p>
+                </div>
+                <div id="three" class="stage">
+                    <img id="pokeprev" src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png">
+                    <p>Serperior</p>
+                    <img id="pkmtype" src="https://archives.bulbagarden.net/media/upload/2/23/GrassIC_BW.png">
+                    <img id="pkmtype" src="">
+                </div>
+    
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="LASTinfo">
+        <div class="desription">
+            <h3>Usage</h3>
+            <p>Easily the coolest looking of the 3 Unova starters. Serperior may have a shallow movepool, but that doesn't really matter since its stat distribution is unique enough to make this set work. Leaf Blade is STAB and the primary attacking move. Giga Drain is also STAB but is mainly for recovery. Leech Seed is a must have for this stall set, as is Toxic, which in tandem will quickly wear down the enemy. Big Root is a great item for this set.</p>
+        </div>
+        <div class="high">
+            <div class="wheretofind">
+                <h3>Where to find</h3>
+                <img src="https://www.serebii.net/pokearth/maps/unova/19.png">
+                <p id="location">Nuvema Town</p>
+            </div>
+            <div class="moves">
+                <h3>Moveset</h3>
+                <div id="one">
+                    <p>Leaf Blade</p>
+                </div>
+                <div id="two">
+                    <p>Giga Drain</p>
+                </div>
+                <div id="three">
+                    <p>Leech Seed</p>
+                </div>
+                <div id="four">
+                    <p>Toxic</p>
+                </div>
+            </div>
+            <div class="extra">
+                <div class="itemslider">
+                    <div class="item">
+                        <h3>Item</h3>
+                        <img src="https://archives.bulbagarden.net/media/upload/2/2d/Dream_Big_Root_Sprite.png">
+                        <p>Big Root</p>
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider" id="slider2">
+                            <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/4/47/Spr_5b_497.png" alt="Картинка 1"></div>
+                            <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/8/81/Spr_5b_537.png" alt="Картинка 2"></div>
+                            <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5b/Spr_5b_604.png" alt="Картинка 3"></div>
+                            <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/e/e7/Spr_5b_609.png" alt="Картинка 3"></div>
+                            <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/c/cf/Spr_5b_567.png" alt="Картинка 3"></div>
+                            <div class="slide"><img src="https://archives.bulbagarden.net/media/upload/5/5d/Spr_5b_612.png" alt="Картинка 3"></div>
+                        </div>
+                        <button class="arrow arrow-left" onclick="moveSlide(-1)">&#8592;</button>
+                        <button class="arrow arrow-right" onclick="moveSlide(1)">&#8594;</button>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Abillity</h3>
+                    <p>Powers up Grass-type moves in a pinch.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div> -->
+
+    <script src="mainscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+#HEADBlack{
+    padding: 10px 20px 10px 20px;
+    /* background: black; */
+    background: linear-gradient(50deg, black, rgb(35, 35, 35));
+    color: white;
+}
+#HEADWhite{
+    padding: 10px 20px 10px 20px;
+    background: white;
+    color: black;
+}
+#iconIMG{
+    padding-right: 10px;
+    height: 50px;
+}
+.inline-container, .tabcontent{
+    display: flex;
+    align-items: center;
+}
+
+body.alternate{
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    background:
+        radial-gradient(circle, rgba(256, 256, 256, 0.93) 70%, rgba(256, 256, 256, 1) 100%),
+        linear-gradient(45deg, #DADADA 25%, transparent 25%, transparent 75%, #DADADA 75%, #DADADA),
+        linear-gradient(45deg, #DADADA   25%, transparent 25%, transparent 75%, #DADADA 75%, #DADADA);
+    background-color: white;
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+}
+body{
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    background:
+        radial-gradient(circle, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 1) 100%),
+        linear-gradient(45deg, #0A0A0A 25%, transparent 25%, transparent 75%, #0A0A0A 75%, #0A0A0A),
+        linear-gradient(45deg, #0A0A0A   25%, transparent 25%, transparent 75%, #0A0A0A 75%, #0A0A0A);
+    background-color: black;
+    background-size: 50px 50px;
+    background-position: 0 0, 25px 25px;
+}
+.tablink {
+  background-color: grey;
+  color: lightgray;
+  float: left;
+  border: none;
+  border-radius: 0px 0px 15px 15px;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 10%;
+}
+
+
+
+img{
+    image-rendering: pixelated;
+}
+.PKMNtable, .STATStable,.LASTinfo{
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 20px 150px 20px;
+}
+.poketeam{
+    border-collapse: collapse;
+    width: 500px;
+    border-style: hidden;
+}
+.poketeam td, .poketeam th {
+    border: 3px solid black;
+    text-align: center;
+}
+.startercontainer{
+    width: 400px;
+    height: 315px;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.startercontainer #imgSTARTER{
+width: 100%;
+}
+.starter{
+    width: 420px;
+    margin-right: 100px;
+    align-items: center;
+}
+.starter p{
+    text-align: justify;
+}
+.POKEimage{
+    width: 150px;
+}
+#pkmtype{
+    width: 70px;
+}
+.startertype{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.startertype #pkmtype{
+    margin-left: 30px;
+}
+#imgSTARTER{
+    margin-left: 40px;
+}
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+.pokestat{
+    margin: 30px;
+}
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: auto;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.progress-container {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 100px;
+    height: 12px;
+    position: relative;
+}
+.progress {
+    height: 100%;
+    border-radius: 10px;
+}
+.hpSerp { background-color: #FFD700; width: 41.67%; }
+.attackSerp { background-color: #FFD700; width: 41.67%; }
+.defenseSerp { background-color: #A0E515; width: 52.78%; }
+.sp-atkSerp { background-color: #FFD700; width: 41.67%; }
+.sp-defSerp { background-color: #A0E515; width: 52.78%; }
+.speedSerp { background-color: #A0E515; width: 62.78%; }
+
+.hpSeis { background-color: #A0E515; width: 58.33%; }
+.attackSeis { background-color: #A0E515; width: 52.78%; }
+.defenseSeis { background-color: #FFD700; width: 41.67%; }
+.sp-atkSeis { background-color: #FFD700; width: 47.22%; }
+.sp-defSeis { background-color: #FFD700; width: 41.67%; }
+.speedSeis { background-color: #FFD700; width: 41.11%; }
+
+.hpEel { background-color: #FFD700; width: 47.22%; }
+.attackEel { background-color: #A0E515; width: 63.89%; }
+.defenseEel { background-color: #FFD700; width: 44.44%; }
+.sp-atkEel { background-color: #A0E515; width: 58.33%; }
+.sp-defEel { background-color: #FFD700; width: 44.44%; }
+.speedEel { background-color: #FF7A00; width: 27.78%; }
+
+.hpCha { background-color: #FFD700; width: 33.33%; }
+.attackCha { background-color: #FF7A00; width: 30.56%; }
+.defenseCha { background-color: #A0E515; width: 50%; }
+.sp-atkCha { background-color: #23CD5E; width: 80.56%; }
+.sp-defCha { background-color: #A0E515; width: 50%; }
+.speedCha { background-color: #FFD700; width: 44.44%; }
+
+.hpArch { background-color: #FF7A00; width: 41.67%; }
+.attackArch { background-color: #23CD5E; width: 77.78%; }
+.defenseArch { background-color: #FFD700; width: 36.11%; }
+.sp-atkArch { background-color: #A0E515; width: 62.22%; }
+.sp-defArch { background-color: #FFD700; width: 36.11%; }
+.speedArch { background-color: #A0E515; width: 61.11%; }
+
+.hp { background-color: #FFD700; width: 42.22%; }
+.attack { background-color: #23CD5E; width: 81.67%; }
+.defense { background-color: #A0E515; width: 50%; }
+.sp-atk { background-color: #FFD700; width: 33.33%; }
+.sp-def { background-color: #FFD700; width: 38.89%; }
+.speed { background-color: #A0E515; width: 53.89%; }
+
+
+
+
+.weaknesses {
+    padding: 15px 0px 15px 0px;
+    width: 80%;
+    margin: auto;
+}
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.row h3 {
+    margin-right: 10px;
+    min-width: 130px;
+    color: black;
+    font-weight: bold;
+}
+.types{
+    display:inline-table;
+    align-items:start;
+}
+.types img{
+    width: 53px;
+}
+.arrowevo p{
+    text-align: center;
+    width: 80px;
+}
+
+
+
+.STATStable{
+    align-items: flex-start;
+}
+.threestage{
+    display: flex;
+    align-items: center;
+}
+.arrowevo{
+    padding-top: 80px;
+
+}
+#arrow{
+    rotate: 90deg;
+    height: 50px;
+}
+.stage{
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 100px; */
+}
+.stage #pokeprev{
+    width: 100%;
+}
+
+
+
+.LASTinfo{
+    display: grid;
+}
+.wheretofind p, .wheretofind h3{
+    text-align: start;
+}
+.wheretofind img{
+    width: 400px;
+    border-radius: 8px;
+}
+.moves div{
+    color: white;
+    background-color: #199C4A;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 10px;
+}
+.Seis div{
+    background-color: #0894D6;
+}
+.Eel div{
+    background-color: #216373;
+}
+.Cha div{
+    background-color: #7352E6;
+}
+.Arch div{
+    background-color: #DE524A;
+}
+.Hax div{
+    background-color: #3A3A4A;
+}
+.moves p{
+    mix-blend-mode:luminosity;
+opacity: 95%;
+}
+.high{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.extra{
+    display: grid;
+}
+.extra img{
+    width: 60px;
+}
+.item{
+    width: 170px;
+    flex: 0 0 auto;
+    margin-bottom: 30px;
+}
+.desription{
+    display: block;
+    width: 1000px;
+}
+.desription p, .extra p{
+    text-align: justify;
+}
+.extra p{
+    width: 300px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 10;
+}
+.arrow:hover {
+    background-color: rgba(87, 87, 87, 0.8);
+}
+.arrow-left {
+    left: 10px;
+}
+.arrow-right {
+    right: 10px;
+}
+
+
+.itemslider{
+    display: flex;
+}
